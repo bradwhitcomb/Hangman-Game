@@ -1,5 +1,5 @@
 body{
-	background-color: peru;
+	
 }
 h1{
 	text-align: center;
@@ -11,7 +11,7 @@ h2{
 .container {
 	border:10px solid #8E887A;
 	height:600px;
-	background-image: url()
+	
 }
 
 .letter {
@@ -54,4 +54,9 @@ h2{
 .wallpaper{
 	height: 20px;
 	background-color: hsla(120,100%,25%,0.3);
+}
+
+.lastRow{
+	height: 280px;
+	background-image: url(../images/images.jpg);
 }

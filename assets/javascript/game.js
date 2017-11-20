@@ -4,9 +4,10 @@
 
 	$(document).ready(function() {
 		var wins = 0;
+
 		var guessRemaining = 10;
-		$("#scoreboard").append(wins);
-		$("#scoreboard").append(guessRemaining);
+		
+		
 		var splitWord = 0;
 		var winner = [];
 		$("#wordGenerator").on("click", function() {
@@ -50,7 +51,7 @@
 			$("#letterGuess").append(userGuess);
 			guessRemaining = guessRemaining - 1;
 			console.log("user Guess is " + userGuess + "guessRemaining is "+guessRemaining);
-
+			$("#scoreboard1").text(guessRemaining);
 
 
 			for(var letters = 0; letters<splitWord.length; letters ++){
@@ -60,11 +61,13 @@
 						console.log("it's a match");
 						winner.push(userGuess);
 						console.log(winner);
+
 					
 						
 						if (winner.length === splitWord.length){
 						wins = wins + 1;
 						console.log("WINS " + wins);
+						$("#scoreboard").text(wins);
 
 				}
 				}
